@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Labs Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <div>
+                    <h1>Web Engineering Labs</h1>
+                    <p class="subtitle">Interactive Learning Portal</p>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number" id="lab-count">02</span>
+                    <span class="stat-label">Labs</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="task-count">06</span>
+                    <span class="stat-label">Tasks</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Web Engineering Labs</h2>
+                <p>A collection of interactive labs to learn and practice web engineering concepts. Each lab contains hands-on tasks with different Technologies.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" id="explore-btn">
+                        <i class="fas fa-rocket"></i> Explore Labs
+                    </button>
+                    <button class="btn-secondary" id="github-btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </button>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <div class="illustration">
+                    <div class="lab-icon-large">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="circles">
+                        <div class="circle circle-1"></div>
+                        <div class="circle circle-2"></div>
+                        <div class="circle circle-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Labs Grid -->
+        <main class="main-content">
+            <div class="section-header">
+                <h2><i class="fas fa-flask"></i> Available Labs</h2>
+                <p>Click on any lab to view its tasks and demonstrations</p>
+            </div>
+
+            <div class="labs-grid" id="labs-container">
+                <!-- Lab cards will be dynamically added here -->
+                <!-- We'll add them via JavaScript for easier maintenance -->
+            </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Web Dev Labs</h4>
+                    <p>A hands-on learning Lab for web engineering concepts.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <div class="social-links">
+                        <a href="https://github.com/CharlieFour/Web-Engineering-Lab" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technologies</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Web Engineering Labs Portal. Created with <i class="fas fa-heart"></i> for learning web engineering.</p>
+                <p class="last-updated">Last updated: <span id="current-date"></span></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Add Lab Modal -->
+    <div class="modal" id="add-lab-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Lab</h3>
+                <button class="close-modal" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>To add a new lab to this portal:</p>
+                <ol class="add-lab-steps">
+                    <li>Create a new folder with the lab number (e.g., "03")</li>
+                    <li>Add your lab files in the "code" subfolder</li>
+                    <li>Make sure you have an index.html in that folder</li>
+                    <li>Edit the <code>labsData</code> array in script.js</li>
+                    <li>Add a new object with lab details</li>
+                </ol>
+                <div class="code-example">
+                    <pre><code>{
+  id: 3,
+  title: "JavaScript Fundamentals",
+  description: "Introduction to JavaScript programming",
+  tasks: 4,
+  difficulty: "Intermediate",
+  color: "#9c27b0"
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
