@@ -17,6 +17,15 @@ const labsData = [
         difficulty: "Beginner",
         color: "#4cc9f0",
         folder: "02"
+    },
+    {
+        id: 3,
+        title: "CSS Styling & Forms",
+        description: "Design the web page using CSS and use DaisyUI components.",
+        tasks: 2,
+        difficulty: "Beginner",
+        color: "#dd4cf0",
+        folder: "03"
     }
     // Add new labs here in the future:
     // {

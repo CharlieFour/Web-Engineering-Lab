@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementary School</title>
+
+    <!-- Tailwind + DaisyUI CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="bg-base-200">
+
+    <!-- Navbar -->
+    <div class="navbar bg-primary text-primary-content px-6">
+        <div class="flex-1">
+            <a class="text-2xl font-bold">🏫 Elementary School</a>
+        </div>
+        <div class="flex-none">
+            <ul class="menu menu-horizontal px-1 hidden lg:flex">
+                <li><a>Home</a></li>
+                <li><a>School Info</a></li>
+                <li><a>Calendar</a></li>
+                <li><a>Academics</a></li>
+                <li><a>Activities</a></li>
+                <li><a>Students</a></li>
+                <li><a>Parents</a></li>
+                <li><a>Staff</a></li>
+                <li><a>Development</a></li>
+                <li><a>Search</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="p-8 space-y-12">
+
+        <!-- Welcome Section -->
+        <section class="hero bg-base-100 rounded-box shadow-lg p-8">
+            <div class="hero-content flex-col lg:flex-row gap-10">
+                <img src="images/school.png" 
+                     alt="School Building" 
+                     class="rounded-lg shadow-2xl w-72">
+
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">Welcome to Our School</h2>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat...
+                    </p>
+                    <a href="#" class="btn btn-primary">📚 Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-2xl">📰 School News</h2>
+                <p>
+                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                    suscipit lobortis nisl ut aliquip ex ea commodo consequat...
+                </p>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-2xl">📅 Upcoming Events</h2>
+                <ul class="list-disc ml-6 space-y-2">
+                    <li><span class="font-semibold">Dec 8:</span> Christmas Concert</li>
+                    <li><span class="font-semibold">Dec 19:</span> Last day of classes for 2017</li>
+                    <li><span class="font-semibold">Jan 5:</span> First day of classes for 2017</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-6 bg-primary text-primary-content">
+        <div>
+            <p>© Name of Elementary | Contact | Site Map | Last Updated: 12/12/2017</p>
+        </div>
+    </footer>
+
+</body>
+</html>

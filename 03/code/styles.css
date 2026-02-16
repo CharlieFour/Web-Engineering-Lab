@@ -1,0 +1,182 @@
+/* ===== Lab 02 Main Page – Modern & Clean ===== */
+:root {
+  --primary: #4361ee;
+  --primary-dark: #3a0ca3;
+  --light-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text-dark: #1e293b;
+  --text-muted: #64748b;
+  --shadow-sm: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --border-radius: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(145deg, #f1f5f9 0%, #e4eaf1 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  line-height: 1.5;
+  color: var(--text-dark);
+}
+
+/* main container – uses max-width and auto margins */
+body > * {
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Header */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--primary-dark);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+h1 i {
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Intro text card */
+.intro-text {
+  background: var(--card-bg);
+  padding: 2rem 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 3rem;
+  border-left: 6px solid var(--primary);
+  text-align: center;
+}
+
+.intro-text p {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto 0.5rem;
+}
+
+.intro-text p:first-child {
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+/* Navigation grid */
+.main-nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0;
+  margin: 0 0 3rem;
+}
+
+.main-nav li {
+  width: 100%;
+}
+
+.main-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--card-bg);
+  padding: 2.2rem 1.5rem;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 1.3rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+  border: 1px solid rgba(0,0,0,0.02);
+  height: 100%;
+  row-gap: 1rem;
+}
+
+.main-nav a i {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  transition: transform 0.2s;
+}
+
+.main-nav a:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+  background: #ffffff;
+}
+
+.main-nav a:hover i {
+  transform: scale(1.1);
+  color: var(--primary-dark);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  body {
+    padding: 1.5rem 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    padding: 1.5rem;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .main-nav a {
+    padding: 1.8rem 1rem;
+    font-size: 1.2rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 1rem;
+  }
+
+  .main-nav a i {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+  }
+}
