@@ -22,10 +22,19 @@ const labsData = [
         id: 3,
         title: "CSS Styling & Forms",
         description: "Design the web page using CSS and use DaisyUI components.",
-        tasks: 2,
+        tasks: 4,
         difficulty: "Beginner",
         color: "#dd4cf0",
         folder: "03"
+    },
+    {
+        id: 4,
+        title: "Media Queries and Responsive Design",
+        description: "Learn how to make web pages responsive using CSS media queries.",
+        tasks: 2,
+        difficulty: "Beginner",
+        color: "#f72585",
+        folder: "04"
     }
     // Add new labs here in the future:
     // {
