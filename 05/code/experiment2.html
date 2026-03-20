@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typography in Web Design</title>
+
+    <!-- Same CSS file from Experiment 2 -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts for Typography Experiment -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&family=Courier+Prime&display=swap" rel="stylesheet">
+
+    <style>
+        /* Typography Demonstration */
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .serif-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+
+        .mono-text {
+            font-family: 'Courier Prime', monospace;
+        }
+
+        .improved-text {
+            line-height: 1.7;
+            letter-spacing: 0.5px;
+        }
+
+        .bad-text {
+            font-size: 14px;
+            line-height: 1;
+        }
+
+        .good-text {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .contrast-good {
+            color: #222;
+        }
+
+        .contrast-bad {
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">📝 Typography Demo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Serif</a></li>
+                <li><a href="#">Sans-serif</a></li>
+                <li><a href="#">Monospace</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="banner">
+        <h1 class="serif-heading">Typography in Web Design</h1>
+        <p class="improved-text">
+            Good typography improves readability, accessibility, and user experience.
+        </p>
+    </section>
+
+    <!-- Font Comparison Section -->
+    <section class="products">
+        <h2>1️⃣ Font Styles Comparison</h2>
+
+        <div class="product-grid">
+
+            <div class="card">
+                <h3>Sans-Serif (Poppins)</h3>
+                <p>This is clean and modern.</p>
+            </div>
+
+            <div class="card">
+                <h3 class="serif-heading">Serif (Playfair)</h3>
+                <p>Serif fonts feel elegant and formal.</p>
+            </div>
+
+            <div class="card">
+                <h3>Monospace</h3>
+                <p class="mono-text">Code style appearance.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Readability Comparison -->
+    <section class="products">
+        <h2>2️⃣ Readability Comparison</h2>
+
+        <div class="product-grid">
+
+            <div class="card">
+                <h3>Bad Typography</h3>
+                <p class="bad-text contrast-bad">
+                    This text has small size, low contrast and poor spacing which reduces readability.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Good Typography</h3>
+                <p class="good-text contrast-good">
+                    This text has better size, proper line spacing and strong contrast for improved readability.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Typography Experiment | UI/UX Lab</p>
+    </footer>
+
+</body>
+</html>

@@ -31,11 +31,57 @@ const labsData = [
         id: 4,
         title: "Media Queries and Responsive Design",
         description: "Learn how to make web pages responsive using CSS media queries.",
-        tasks: 2,
+        tasks: 4,
         difficulty: "Beginner",
         color: "#f72585",
         folder: "04"
+    },
+    {
+        id: 5,
+        title: "OpenEnded Lab 1",
+        description: "UI/UX in Typography",
+        tasks: 3,
+        difficulty: "Beginner",
+        color: "#f79c25",
+        folder: "05"
+    },
+    {
+        id: 6,
+        title: "Introduction to React with Vite",
+        description: "Getting started with React components, props and jsx",
+        tasks: 3,
+        difficulty: "Intermediate",
+        color: "#25f77d",
+        folder: "06"
+    },
+    {
+        id: 7,
+        title: "React Props Stats and Callback functions",
+        description: "Understanding Props, State, and Callback Functions in React",
+        tasks: 5,
+        difficulty: "Intermediate",
+        color: "#25f7c3",
+        folder: "07"
+    },
+    {
+        id: 8,
+        title: "Conditional Rendering and Component Lifecycle",
+        description: "Demonstrating Conditional Rendering and Component Lifecycle in React",
+        tasks: 4,
+        difficulty: "Intermediate",
+        color: "#95f725",
+        folder: "08"
+    },
+    {
+        id: 9,
+        title: "React Routing and Form Handling",
+        description: "Implementing Routing and Form Handling in React using React Router",
+        tasks: 1,
+        difficulty: "Intermediate",
+        color: "#bc25f7",
+        folder: "09"
     }
+    
     // Add new labs here in the future:
     // {
     //     id: 3,
